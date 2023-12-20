@@ -1,0 +1,21 @@
+FATAL EXCEPTION: main
+     Process: com.ichi2.anki.debug, PID: 21543
+     kotlin.UninitializedPropertyAccessException: lateinit property callback has not been initialized
+     at com.ichi2.anki.permissions.PermissionManager.launchDialogOrExecuteCallbackNow(PermissionManager.kt:119)
+     at com.ichi2.anki.DeckPicker.mediaCheck(DeckPicker.kt:1455)
+     at com.ichi2.anki.dialogs.MediaCheckDialog$onCreateDialog$1$1.invoke(MediaCheckDialog.kt:37)
+     at com.ichi2.anki.dialogs.MediaCheckDialog$onCreateDialog$1$1.invoke(MediaCheckDialog.kt:36)
+     at com.afollestad.materialdialogs.callbacks.DialogCallbackExtKt.invokeAll(DialogCallbackExt.kt:68)
+     at com.afollestad.materialdialogs.MaterialDialog.onActionButtonClicked$core(MaterialDialog.kt:406)
+     at com.afollestad.materialdialogs.internal.button.DialogActionButtonLayout$onFinishInflate$1.onClick(DialogActionButtonLayout.kt:84)
+     at android.view.View.performClick(View.java:6597)
+     at android.view.View.performClickInternal(View.java:6574)
+     at android.view.View.access$3100(View.java:778)
+     at android.view.View$PerformClick.run(View.java:25885)
+     at android.os.Handler.handleCallback(Handler.java:873)
+     at android.os.Handler.dispatchMessage(Handler.java:99)
+     at android.os.Looper.loop(Looper.java:193)
+     at android.app.ActivityThread.main(ActivityThread.java:6669)
+     at java.lang.reflect.Method.invoke(Native Method)
+     at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
